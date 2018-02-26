@@ -4583,6 +4583,7 @@ Datasheet</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="SWITCH-SPDT" device="-SMD-RIGHT-ANGLE" package3d_urn="urn:adsk.eagle:package:40179/1"/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="470"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4655,6 +4656,7 @@ Datasheet</description>
 <instance part="GND12" gate="1" x="-119.38" y="-55.88"/>
 <instance part="S1" gate="1" x="-116.84" y="-78.74" rot="R90"/>
 <instance part="R6" gate="G$1" x="-33.02" y="-101.6" rot="R90"/>
+<instance part="GND14" gate="1" x="0" y="-109.22"/>
 </instances>
 <busses>
 </busses>
@@ -4861,6 +4863,11 @@ Datasheet</description>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="-119.38" y1="-50.8" x2="-119.38" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="CN1" gate="G$1" pin="SHIELD"/>
+<wire x1="0" y1="-106.68" x2="7.62" y2="-106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED-" class="1">
